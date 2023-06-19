@@ -31,6 +31,11 @@ const RestaurantInterface = () =>{
         setenviogratis (!EnvioGratis);
     };
 
+    // Funcion para recibir y gestionar pedidos
+    const editarNuevosPedidos = (pedidos) =>{
+        setpedido([...pedido, pedidos]);
+
+    };
     // Funcion para mostrar el historial de pedidos
     
 }
