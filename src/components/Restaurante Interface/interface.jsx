@@ -7,4 +7,5 @@ const RestaurantInterface = () =>{
 
     // Estado para las promociones y envios gratis
     const [promo, setpromo] = useState('');
+    const [enviogratis, setenviogratis] = useState (false);
 }
