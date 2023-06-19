@@ -14,4 +14,7 @@ const RestaurantInterface = () =>{
     const [historial, sethistorial] = useState ('');
 
     // Funcion para editar el horario de apertura y cierre 
+    const editarApertura = (e) =>{
+        setapertura(e.target.value);
+    };
 }
