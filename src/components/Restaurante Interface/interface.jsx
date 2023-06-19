@@ -47,5 +47,19 @@ const RestaurantInterface = () =>{
     };
 
     // Funcion para mostrar el historial de pedidos
-    
+    const mostrarhistorial = () =>{
+        return pedido.map((pedidos)=>(
+            <div key={pedidos.id}>
+                <p>Pedido ID: {pedidos.id}</p>
+                <p>Estado: {pedidos.estado}</p>
+            </div>
+        ));
+    };
+    return(
+        <div>
+            <h1>Restaurant Interface</h1>
+            <h2>Horario de Apertura y Cierre</h2>
+            <label type="time" value={apertura} onChange={editarApertura}></label>
+        </div>
+    )
 }
