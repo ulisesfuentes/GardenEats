@@ -30,4 +30,7 @@ const RestaurantInterface = () =>{
     const editarEnvioGratis = () => {
         setenviogratis (!EnvioGratis);
     };
+
+    // Funcion para mostrar el historial de pedidos
+    
 }
