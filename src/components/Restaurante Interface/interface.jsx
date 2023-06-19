@@ -20,4 +20,9 @@ const RestaurantInterface = () =>{
     const editarCierre = (e) => {
         setcierre(e.target.value);
     };
+
+    // Funcion para realizar promociones 
+    const editarPromo = (e) =>{
+        setpromo (e.target.value);
+    };
 }
