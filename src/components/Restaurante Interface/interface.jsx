@@ -25,4 +25,9 @@ const RestaurantInterface = () =>{
     const editarPromo = (e) =>{
         setpromo (e.target.value);
     };
+
+    // Funcion para editar envios gratis
+    const editarEnvioGratis = () => {
+        setenviogratis (!EnvioGratis);
+    };
 }
