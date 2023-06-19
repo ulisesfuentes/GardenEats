@@ -17,4 +17,7 @@ const RestaurantInterface = () =>{
     const editarApertura = (e) =>{
         setapertura(e.target.value);
     };
+    const editarCierre = (e) => {
+        setcierre(e.target.value);
+    };
 }
