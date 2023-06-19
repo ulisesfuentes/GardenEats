@@ -36,6 +36,16 @@ const RestaurantInterface = () =>{
         setpedido([...pedido, pedidos]);
 
     };
+    const gestionarpedido = (pedidosId, estado) =>{
+        const actualizarPedido = pedido.map((pedidos) => {
+            if (pedido.id === pedidosId){
+                return {...pedidos, estado};
+            }
+        return pedidos;
+        });
+        setpedido(actualizarPedido);
+    };
+
     // Funcion para mostrar el historial de pedidos
     
 }
