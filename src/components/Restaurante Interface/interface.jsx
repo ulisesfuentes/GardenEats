@@ -11,4 +11,5 @@ const RestaurantInterface = () =>{
 
     // Estado para los pedidos y su historial
     const [pedido, setpedido] = useState ([]);
+    const [historial, sethistorial] = useState ('');
 }
