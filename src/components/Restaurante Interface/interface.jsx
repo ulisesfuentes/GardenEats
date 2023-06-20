@@ -48,7 +48,7 @@ const RestaurantInterface = () =>{
 
     // Funcion para mostrar el historial de pedidos
     const mostrarhistorial = () =>{
-        return pedido.map((pedidos)=>(
+        return historial.map((pedidos)=>(
             <div key={pedidos.id}>
                 <p>Pedido ID: {pedidos.id}</p>
                 <p>Estado: {pedidos.estado}</p>
