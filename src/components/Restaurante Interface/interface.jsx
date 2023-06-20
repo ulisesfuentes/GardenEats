@@ -32,8 +32,8 @@ const RestaurantInterface = () =>{
     };
 
     // Funcion para recibir y gestionar pedidos
-    const editarNuevosPedidos = (pedidos) =>{
-        setpedido([...pedido, pedidos]);
+    const editarNuevosPedidos = (nuevopedido) =>{
+        setpedido([...pedido, nuevopedido]);
 
     };
     const gestionarpedido = (pedidosId, estado) =>{
