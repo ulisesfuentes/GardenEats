@@ -24,6 +24,12 @@ const Show = () => {
     //console.log(products)
    }
    
+  //4 - Funcion para eliminar un doc
+  const deleteProduct = async (id) => {
+    const productDoc = doc(db, "products", id)
+    await deleteDoc(productDoc)
+    getProducts()
+   }
 }
 
 export default Show
