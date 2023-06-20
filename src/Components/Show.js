@@ -14,6 +14,16 @@ const Show = () => {
   //2 - referenciamos a la DB firestore
   const productsCollection = collection(db, "products")
 
+  //3 - Funcion para mostrar TODOS los docs
+  const getProducts = async ()   => {
+    const data = await getDocs(productsCollection)
+    //console.log(data.docs)
+    setProducts(
+        data.docs.map( (doc) => ( {...doc.data(),id:doc.id}))
+    )
+    //console.log(products)
+   }
+   
 }
 
 export default Show
