@@ -70,6 +70,17 @@ const RestaurantInterface = () =>{
             <label>Envio Gratis:</label>
             <input type="checkbox" checked={editarEnvioGratis} />
             
+            <h2>Pedidos en Tiempo Real</h2>
+            <div>
+                {pedido.map((pedidos)=>(
+                <div key={pedidos.id}>
+                <p>Pedido ID: {pedidos.id}</p>
+                <p>Estado: {pedidos.estado}</p>
+                <button onClick={() => gestionarpedido(pedidos.id, 'accepted')}> Aceptar</button>
+                <button onClick={() => gestionarpedido(pedidos.id, 'rejected')}> Rechazar</button>
+                </div>    
+                ))}
+            </div>
         </div>
     )
 }
