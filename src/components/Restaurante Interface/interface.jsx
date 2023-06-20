@@ -59,7 +59,10 @@ const RestaurantInterface = () =>{
         <div>
             <h1>Restaurant Interface</h1>
             <h2>Horario de Apertura y Cierre</h2>
-            <label type="time" value={apertura} onChange={editarApertura}></label>
+            <label>Apertura:</label>
+            <input type="time" value={apertura} onChange={editarApertura} />
+            <label>Cierre:</label>
+            <input type="time" value={cierre} onChange={editarCierre} />
         </div>
     )
 }
