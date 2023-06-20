@@ -33,7 +33,7 @@ const RestaurantInterface = () =>{
 
     // Funcion para recibir y gestionar pedidos
     const editarNuevosPedidos = (nuevopedidos) =>{
-        setpedido([...pedidos, nuevopedidos]);
+        setpedidos([...pedidos, nuevopedidos]);
 
     };
     const gestionarpedido = (pedidoId, estado) =>{
@@ -43,7 +43,7 @@ const RestaurantInterface = () =>{
             }
         return pedido;
         });
-        setpedido(actualizarPedido);
+        setpedidos(actualizarPedido);
     };
 
     // Funcion para mostrar el historial de pedidos
