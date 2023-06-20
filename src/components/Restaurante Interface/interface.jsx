@@ -10,7 +10,7 @@ const RestaurantInterface = () =>{
     const [enviogratis, setenviogratis] = useState (false);
 
     // Estado para los pedidos y su historial
-    const [pedido, setpedido] = useState ([]);
+    const [pedidos, setpedidos] = useState ([]);
     const [historial, sethistorial] = useState ([]);
 
     // Funcion para editar el horario de apertura y cierre 
@@ -32,8 +32,8 @@ const RestaurantInterface = () =>{
     };
 
     // Funcion para recibir y gestionar pedidos
-    const editarNuevosPedidos = (nuevopedido) =>{
-        setpedido([...pedidos, nuevopedido]);
+    const editarNuevosPedidos = (nuevopedidos) =>{
+        setpedido([...pedidos, nuevopedidos]);
 
     };
     const gestionarpedido = (pedidoId, estado) =>{
