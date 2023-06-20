@@ -28,7 +28,7 @@ const RestaurantInterface = () =>{
 
     // Funcion para editar envios gratis
     const editarEnvioGratis = () => {
-        setenviogratis (!EnvioGratis);
+        setenviogratis (!enviogratis);
     };
 
     // Funcion para recibir y gestionar pedidos
