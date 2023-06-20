@@ -2,52 +2,52 @@ import React,{useState} from "react";
 
 const RestaurantInterface = () =>{
     // Estado para el horario de apertura y cierre
-    const [apertura, setapertura] = useState ('');
-    const [cierre, setcierre] = useState('');
+    const [apertura, setApertura] = useState ("");
+    const [cierre, setCierre] = useState("");
 
     // Estado para las promociones y envios gratis
-    const [promo, setpromo] = useState('');
-    const [enviogratis, setenviogratis] = useState (false);
+    const [promo, setPromo] = useState("");
+    const [envioGratis, setEnvioGratis] = useState (false);
 
     // Estado para los pedidos y su historial
-    const [pedidos, setpedidos] = useState ([]);
-    const [historial, sethistorial] = useState ([]);
+    const [pedidos, setPedidos] = useState ([]);
+    const [historial, setHistorial] = useState ([]);
 
     // Funcion para editar el horario de apertura y cierre 
     const editarApertura = (e) =>{
-        setapertura(e.target.value);
+        setApertura(e.target.value);
     };
     const editarCierre = (e) => {
-        setcierre(e.target.value);
+        setCierre(e.target.value);
     };
 
     // Funcion para realizar promociones 
     const editarPromo = (e) =>{
-        setpromo (e.target.value);
+        setPromo (e.target.value);
     };
 
     // Funcion para editar envios gratis
     const editarEnvioGratis = () => {
-        setenviogratis (!enviogratis);
+        setEnvioGratis(!envioGratis);
     };
 
     // Funcion para recibir y gestionar pedidos
-    const editarNuevosPedidos = (nuevopedidos) =>{
-        setpedidos([...pedidos, nuevopedidos]);
+    const editarNuevosPedidos = (nuevoPedido) =>{
+        setPedidos([...pedidos, nuevoPedido]);
 
     };
-    const gestionarpedido = (pedidoId, estado) =>{
-        const actualizarPedido = pedidos.map((pedido) => {
+    const gestionarPedido = (pedidoId, estado) =>{
+        const pedidosActualizados = pedidos.map((pedido) => {
             if (pedido.id === pedidoId){
                 return {...pedido, estado};
             }
         return pedido;
         });
-        setpedidos(actualizarPedido);
+        setPedidos(pedidosActualizados);
     };
 
     // Funcion para mostrar el historial de pedidos
-    const mostrarhistorial = () =>{
+    const mostrarHistorial = () =>{
         return historial.map((pedido)=>(
             <div key={pedido.id}>
                 <p>Pedido ID: {pedido.id}</p>
@@ -68,7 +68,7 @@ const RestaurantInterface = () =>{
             <label>Promo:</label>
             <input type="text" value={promo} onChange={editarPromo} />
             <label>Envio Gratis:</label>
-            <input type="checkbox" checked={editarEnvioGratis} />
+            <input type="checkbox" checked={envioGratis} onChange={editarEnvioGratis} />
             
             <h2>Pedidos en Tiempo Real</h2>
             <div>
@@ -76,13 +76,13 @@ const RestaurantInterface = () =>{
                 <div key={pedido.id}>
                 <p>Pedido ID: {pedido.id}</p>
                 <p>Estado: {pedido.estado}</p>
-                <button onClick={() => gestionarpedido(pedido.id, 'accepted')}> Aceptar</button>
-                <button onClick={() => gestionarpedido(pedido.id, 'rejected')}> Rechazar</button>
+                <button onClick={() => gestionarPedido(pedido.id, "accepted")}> Aceptar</button>
+                <button onClick={() => gestionarPedido(pedido.id, "rejected")}> Rechazar</button>
                 </div>    
                 ))}
             </div>
             <h2>Historial de Pedidos</h2>
-            {mostrarhistorial()}
+            {mostrarHistorial()}
         </div>
     );
 };
