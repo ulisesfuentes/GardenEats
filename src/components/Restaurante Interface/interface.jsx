@@ -67,8 +67,9 @@ const RestaurantInterface = () =>{
             <h2>Promociones y Envio Gratis</h2>
             <label>Promo:</label>
             <input type="text" value={promo} onChange={editarPromo} />
-
-
+            <label>Envio Gratis:</label>
+            <input type="checkbox" checked={editarEnvioGratis} />
+            
         </div>
     )
 }
