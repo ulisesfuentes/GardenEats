@@ -54,6 +54,13 @@ const Show = () => {
     })    
   }
 
+  //6 - usamos useEffect
+  useEffect( () => {
+    getProducts()
+    // eslint-disable-next-line
+    }, [] )
+
+    
 }
 
 export default Show
