@@ -11,6 +11,9 @@ const Show = () => {
   //1 - configuramos los hooks
   const [products, setProducts] = useState( [] )
 
+  //2 - referenciamos a la DB firestore
+  const productsCollection = collection(db, "products")
+
 }
 
 export default Show
