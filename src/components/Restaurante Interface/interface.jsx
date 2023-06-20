@@ -81,6 +81,8 @@ const RestaurantInterface = () =>{
                 </div>    
                 ))}
             </div>
+            <h2>Historial de Pedidos</h2>
+            {mostrarhistorial()}
         </div>
-    )
-}
+    );
+};
