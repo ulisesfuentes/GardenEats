@@ -48,10 +48,10 @@ const RestaurantInterface = () =>{
 
     // Funcion para mostrar el historial de pedidos
     const mostrarhistorial = () =>{
-        return historial.map((pedidos)=>(
-            <div key={pedidos.id}>
-                <p>Pedido ID: {pedidos.id}</p>
-                <p>Estado: {pedidos.estado}</p>
+        return historial.map((pedido)=>(
+            <div key={pedido.id}>
+                <p>Pedido ID: {pedido.id}</p>
+                <p>Estado: {pedido.estado}</p>
             </div>
         ));
     };
@@ -72,12 +72,12 @@ const RestaurantInterface = () =>{
             
             <h2>Pedidos en Tiempo Real</h2>
             <div>
-                {pedido.map((pedidos)=>(
-                <div key={pedidos.id}>
-                <p>Pedido ID: {pedidos.id}</p>
-                <p>Estado: {pedidos.estado}</p>
-                <button onClick={() => gestionarpedido(pedidos.id, 'accepted')}> Aceptar</button>
-                <button onClick={() => gestionarpedido(pedidos.id, 'rejected')}> Rechazar</button>
+                {pedido.map((pedido)=>(
+                <div key={pedido.id}>
+                <p>Pedido ID: {pedido.id}</p>
+                <p>Estado: {pedido.estado}</p>
+                <button onClick={() => gestionarpedido(pedido.id, 'accepted')}> Aceptar</button>
+                <button onClick={() => gestionarpedido(pedido.id, 'rejected')}> Rechazar</button>
                 </div>    
                 ))}
             </div>
