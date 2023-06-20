@@ -7,4 +7,7 @@ const Create = () => {
   const [ description, setDescription ] = useState('')
   const [ stock, setStock ] = useState(0)
   const navigate = useNavigate()
+
+  const productsCollection = collection(db, "products")
+
 }
