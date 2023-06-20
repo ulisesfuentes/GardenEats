@@ -32,20 +32,20 @@ const RestaurantInterface = () =>{
     };
 
     // Funcion para recibir y gestionar pedidos
-    const editarNuevosPedidos = (nuevoPedido) =>{
+    const editarNuevosPedidos = (nuevoPedido) => {
         setPedidos([...pedidos, nuevoPedido]);
-
-    };
-    const gestionarPedido = (pedidoId, estado) =>{
+      };
+      
+    const gestionarPedido = (pedidoId, estado) => {
         const pedidosActualizados = pedidos.map((pedido) => {
-            if (pedido.id === pedidoId){
-                return {...pedido, estado};
-            }
-        return pedido;
+        if (pedido.id === pedidoId) {
+            return { ...pedido, estado };
+        }
+          return pedido;
         });
         setPedidos(pedidosActualizados);
-    };
-
+      };
+      
     // Funcion para mostrar el historial de pedidos
     const mostrarHistorial = () =>{
         return historial.map((pedido)=>(
@@ -72,13 +72,13 @@ const RestaurantInterface = () =>{
             
             <h2>Pedidos en Tiempo Real</h2>
             <div>
-                {pedido.map((pedido)=>(
+                {pedidos.map((pedido) => (
                 <div key={pedido.id}>
                 <p>Pedido ID: {pedido.id}</p>
                 <p>Estado: {pedido.estado}</p>
-                <button onClick={() => gestionarPedido(pedido.id, "accepted")}> Aceptar</button>
-                <button onClick={() => gestionarPedido(pedido.id, "rejected")}> Rechazar</button>
-                </div>    
+                <button onClick={() => gestionarPedido(pedido.id, "accepted")}>Aceptar</button>
+                <button onClick={() => gestionarPedido(pedido.id, "rejected")}>Rechazar</button>
+                </div>
                 ))}
             </div>
             <h2>Historial de Pedidos</h2>
