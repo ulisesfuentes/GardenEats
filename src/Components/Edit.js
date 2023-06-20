@@ -17,5 +17,15 @@ const Edit = () => {
         await updateDoc(product, data)
         navigate('/')
     }
+    const getProductById = async (id) => {
+        const product = await getDoc( doc(db, "products", id) )
+        if(product.exists()) {
+            //console.log(product.data())
+            setDescription(product.data().description)    
+            setStock(product.data().stock)
+        }else{
+            console.log('El producto no existe')
+        }
+    }
 
 }
