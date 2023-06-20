@@ -1,13 +1,8 @@
 import './App.css';
-import Show from './Components/Show';
+//importamos nuestros componentes
+import Show from './components/Show';
+import Create from './components/Create';
+import Edit from './components/Edit';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>HOLA FIREBASE</h1>
-      <Show />
-    </div>
-  );
-}
-
-export default App;
+//importamos el router
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
