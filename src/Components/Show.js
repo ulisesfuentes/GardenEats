@@ -23,13 +23,37 @@ const Show = () => {
     )
     //console.log(products)
    }
-   
+
   //4 - Funcion para eliminar un doc
   const deleteProduct = async (id) => {
     const productDoc = doc(db, "products", id)
     await deleteDoc(productDoc)
     getProducts()
    }
+
+  //5 - Funcion de confirmacion para Sweet Alert 2
+  const confirmDelete = (id) => {
+    MySwal.fire({
+      title: '¿Elimina el producto?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33',
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) { 
+        //llamamos a la fcion para eliminar   
+        deleteProduct(id)               
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
+    })    
+  }
+
 }
 
 export default Show
