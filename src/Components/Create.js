@@ -9,5 +9,11 @@ const Create = () => {
   const navigate = useNavigate()
 
   const productsCollection = collection(db, "products")
-
+ 
+  const store = async (e) => {
+    e.preventDefault()
+    await addDoc( productsCollection, { description: description, stock: stock } )
+    navigate('/')
+    //console.log(e.target[0].value)
+  } 
 }
