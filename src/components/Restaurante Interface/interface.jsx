@@ -86,3 +86,4 @@ const RestaurantInterface = () =>{
         </div>
     );
 };
+export default RestaurantInterface;
