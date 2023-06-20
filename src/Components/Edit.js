@@ -27,5 +27,8 @@ const Edit = () => {
             console.log('El producto no existe')
         }
     }
-
+    useEffect( () => {
+        getProductById(id)
+        // eslint-disable-next-line
+    }, [])
 }
