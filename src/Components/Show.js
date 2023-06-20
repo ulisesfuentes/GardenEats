@@ -57,10 +57,44 @@ const Show = () => {
   //6 - usamos useEffect
   useEffect( () => {
     getProducts()
-    // eslint-disable-next-line
+  // eslint-disable-next-line
     }, [] )
 
-    
+  //7 - devolvemos vista de nuestro componente
+  return (
+    <>
+    <div className='container'>
+      <div className='row'>
+        <div className='col'>
+          <div className="d-grid gap-2">
+            <Link to="/create" className='btn btn-secondary mt-2 mb-2'>Create</Link>    
+          </div>
+          <table className='table table-dark table-hover'>
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Stock</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              { products.map( (product) => (
+                <tr key={product.id}>
+                  <td>{product.description}</td>
+                  <td>{product.stock}</td>
+                  <td>
+                    <Link to={`/edit/${product.id}`} className="btn btn-light"><i className="fa-solid fa-pencil"></i></Link>
+                    <button onClick={ () => { confirmDelete(product.id) } } className="btn btn-danger"><i className="fa-solid fa-trash"></i></button>
+                  </td>
+                </tr>                
+              )) }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </>
+  )
 }
 
 export default Show
