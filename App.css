@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+.header{
+    background-color: aqua;
+    padding-bottom: 12px;
+    padding-top: 1px;
+    padding-right: 139px;
+}
+.headerh1{
+    font-size: 35px;
+    font-family: 'Acme', sans-serif;
+}
+
 .mercados{
     background-color: #336A29;
     position: absolute;

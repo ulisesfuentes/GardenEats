@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 
-const Header = ({ textH }) => {
-  return (
-    <View>
-      <Text >{textH}</Text>
-    </View>
-  );
-};
+function Header (){
+    return (
+        <div className="header">
+            <h1 className='headerh1'>Hola soy header</h1>
+        </div>
+    )
+}
+
+export default Header;
