@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Header (){
+function Header(props){
     return (
         <div className="header">
-            <h1 className='headerh1'>Hola soy header</h1>
+          <img className='logohome' src={props.img} alt="logo" />
         </div>
     )
 }

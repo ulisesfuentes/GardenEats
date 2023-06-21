@@ -6,13 +6,15 @@ body{
     background-color: #F6EDEC;
 }
 .header{
-    background-color: #ccc9c8;
+    background-color: #d88a70;
     padding-bottom: 12px;
     padding-top: 1px;
     padding-right: 139px;
 }
-.headerh1{
-    font-size: 35px;
+
+.headerH1{
+    color: black;
+    font-size: 25px;
     font-family: 'Acme', sans-serif;
 }
 
@@ -65,3 +67,7 @@ body{
 }
 
 
+.logohome{
+    width: 90px; /* Establece el ancho deseado */
+    height: 90px; /* Establece la altura deseada */ 
+}
