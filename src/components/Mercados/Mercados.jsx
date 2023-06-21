@@ -1,17 +1,17 @@
 import React from 'react';
 
-function Mercados (){
+function Mercados (props){
     return (
         <div className="mercados">
             <div className="logoMercado">
-                
+                <img src={props.img} alt="imagen" />
             </div>
 
             <div className="textoMercado">
-                <h2 className="nombreMercado">Verduleria-La verdura</h2>
-                <h3 className="infoMercado">Abierto hasta 22:00 hs</h3>
-                <h3 className="infoMercado">Entrega a domicilio</h3>
-                <h3 className="infoMercado">Acepta pago online</h3>
+                <h2 className="nombreMercado">{props.nombreMercado}</h2>
+                <h3 className="infoMercado">Abierto hasta {props.horarioMercado} </h3>
+                <h3 className="infoMercado">Entrega {props.entregaMercado}</h3>
+                <h3 className="infoMercado"> {props.modoPago}</h3>
             </div>
         </div>
     )
