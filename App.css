@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
+body{
+    background-color: #F6EDEC;
+}
 .header{
-    background-color: aqua;
+    background-color: #F6EDEC;
     padding-bottom: 12px;
     padding-top: 1px;
     padding-right: 139px;
