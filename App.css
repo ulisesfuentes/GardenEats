@@ -5,18 +5,19 @@
     right: 0; /*Para posicionarlo del lado derecho*/
     border-radius: 25px 0px 0px 25px;
     margin-top: 25px;
+    display: flex;
 }
 
 .imagenLogo{
 
     width: 90px; /* Establece el ancho deseado */
     height: 90px; /* Establece la altura deseada */
-    padding-left: 50px;
-    padding-top: 15px;
+    padding-left: 15px;
+    padding-top: 45px;
 }
 
 .textoMercado{
-    padding-left: 50px;
+    padding-left: 15px;
     font-size: 15px;
     font-family: 'Acme', sans-serif;
     color: aliceblue;
@@ -25,4 +26,8 @@
 
 .infoMercado{
     color: rgb(49, 49, 49);
+}
+
+.imagenLogo, .infoMercado {
+    flex: 1;
 }
