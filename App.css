@@ -25,18 +25,23 @@ body{
     display: flex;
 }
 
+.nombreMercado{
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
 .container {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
 }
-.imagenLogo{
 
+.imagenLogo{
     width: 90px; /* Establece el ancho deseado */
     height: 90px; /* Establece la altura deseada */
     padding-left: 15px;
-    padding-top: 45px;
+    padding-top: 25px;
     border-radius: 50%;
 }
 
@@ -44,8 +49,7 @@ body{
     padding-left: 15px;
     font-size: 15px;
     font-family: 'Acme', sans-serif;
-    color: rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255);    
 }
 
 .infoMercado{
@@ -59,3 +63,5 @@ body{
 .imagenLogo, .infoMercado {
     flex: 1;
 }
+
+
