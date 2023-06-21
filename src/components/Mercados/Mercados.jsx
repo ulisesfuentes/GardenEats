@@ -4,7 +4,7 @@ function Mercados (props){
     return (
         <div className="mercados">
             <div className="logoMercado">
-                <img src={props.img} alt="imagen" />
+                <img className='imagenLogo' src={props.img} alt="imagen" />
             </div>
 
             <div className="textoMercado">

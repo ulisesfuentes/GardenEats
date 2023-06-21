@@ -6,8 +6,11 @@ import './App.css';
 function App () {
   return (
     <div className="App">
+
+
       <Mercados img={carniceria} nombreMercado="La verduleria-Verdura" horarioMercado="22:00" entregaMercado="Con delivery" modoPago="Online"/>
-      <Mercados/>
+
+
     </div>
   );
 }
