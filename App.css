@@ -6,7 +6,7 @@ body{
     background-color: #F6EDEC;
 }
 .header{
-    background-color: #d88a70;
+    background-color: #F6EDEC;
     padding-bottom: 12px;
     padding-top: 1px;
     padding-right: 139px;
@@ -66,8 +66,8 @@ body{
     flex: 1;
 }
 
-
 .logohome{
-    width: 90px; /* Establece el ancho deseado */
-    height: 90px; /* Establece la altura deseada */ 
+    width: 120px; /* Establece el ancho deseado */
+    height:60px; /* Establece la altura deseada */ 
 }
+
