@@ -1,21 +1,14 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Mercados from './src/components/Mercados/Mercados';
+import './App.css';
 
-export default function App() {
+function App () {
   return (
-    <View style={styles.container}>
-      <Text>Garden Eats App</Text>
-      <StatusBar style="auto" />
-    </View>
+    <div className="App">
+      <Mercados/>
+      <Mercados/>
+    </div>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
