@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 .mercados{
     background-color: #336A29;
     position: absolute;
@@ -17,4 +18,6 @@
 .textoMercado{
     padding-left: 50px;
     font-size: 15px;
+    font-family: 'Acme', sans-serif;
+    
 }
