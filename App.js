@@ -17,7 +17,6 @@ function App () {
     
     <Mercados img={verduleria} nombreMercado="La verduleria-Verdura" horarioMercado="22:00" entregaMercado="Con delivery" modoPago="Online"/>
 
-
     </div>
   );
 }

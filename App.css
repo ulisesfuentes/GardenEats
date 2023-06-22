@@ -21,11 +21,11 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #f6edec;
-    padding: 12px 139px 1px 0;
+    padding: 12px 1px 1px 0;
   }
   
-  .menu {
-    margin-left: auto;
+  .menu-container {
+    margin-left: 175px;
   }
 
 .headerH1{
@@ -35,15 +35,15 @@ body{
 }
 
 .logohome{
-    width: 120px; /* Establece el ancho deseado */
-    height:60px; /* Establece la altura deseada */ 
+    width: 120px;
+    height:50px;
 }
 
 
 .mercados{
     background-color: #336A29;
     position: absolute;
-    right: 0; /*Para posicionarlo del lado derecho*/
+    right: 0; 
     border-radius: 25px 0px 0px 25px;
     margin-top: 25px;
     display: flex;
@@ -63,8 +63,8 @@ body{
 }
 
 .imagenLogo{
-    width: 90px; /* Establece el ancho deseado */
-    height: 90px; /* Establece la altura deseada */
+    width: 90px;
+    height: 90px;
     padding-left: 15px;
     padding-top: 25px;
     border-radius: 50%;
