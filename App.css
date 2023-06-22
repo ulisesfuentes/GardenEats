@@ -11,7 +11,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #f6edec;
-    padding: 12px 1px 1px 0;
+    padding: 12px 13px 1px 0;
   }
   
   .logohome{
@@ -21,7 +21,7 @@ body{
 }
 
   .menu-container {
-    margin-left: 198px;
+    margin-left: 1px;
     padding-top: 4px;
   }
 
@@ -40,7 +40,7 @@ body{
     right: 0; 
     border-radius: 25px 0px 0px 25px;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 46px;
     display: flex;
     
 }
@@ -48,6 +48,7 @@ body{
 .nombreMercado{
     margin-bottom: 5px;
     margin-right: 10px;
+    font-size: 22px;
 }
 
 .container {
@@ -60,13 +61,14 @@ body{
 .imagenLogo{
     width: 90px;
     height: 90px;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-top: 25px;
     border-radius: 50%;
+    padding-right: 5px;
 }
 
 .textoMercado{
-    padding-left: 3px;
+    padding-left: 5px;
     font-size: 15px;
     font-family: 'Acme', sans-serif;
     color: rgb(255, 255, 255);    
@@ -74,9 +76,10 @@ body{
 
 .infoMercado{
     margin-top: 1px;
+    margin-bottom: 10px;
     padding-top: 1px;
     color: #E1E1E1;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -90,6 +93,8 @@ body{
     margin-top: 15px;
     padding-left: 0%;
     border-radius: 24px;
+    margin-right: 16px;
+
 }
 
 .search-form {
@@ -98,7 +103,7 @@ body{
     border: 1px solid #ffffff;
     border-radius: 24px;
     padding: 5px;
-    margin-left: 2px;
+    margin-left: 1px;
     margin-top: 5px;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
   }

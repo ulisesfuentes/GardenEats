@@ -11,7 +11,7 @@ function Mercados (props){
                 <h2 className="nombreMercado">{props.nombreMercado}</h2>
                 <h3 className="infoMercado">Abierto hasta {props.horarioMercado} </h3>
                 <h3 className="infoMercado">Entrega {props.entregaMercado}</h3>
-                <h3 className="infoMercado"> {props.modoPago}</h3>
+                <h3 className="infoMercado"> Tipo de pago {props.modoPago}</h3>
             </div>
         </div>
     )
