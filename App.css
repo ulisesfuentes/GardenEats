@@ -5,18 +5,40 @@
 body{
     background-color: #F6EDEC;
 }
+
+/*
 .header{
     background-color: #F6EDEC;
     padding-bottom: 12px;
     padding-top: 1px;
     padding-right: 139px;
+    position: relative;
 }
+*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6edec;
+    padding: 12px 139px 1px 0;
+  }
+  
+  .menu {
+    margin-left: auto;
+  }
 
 .headerH1{
     color: black;
     font-size: 25px;
     font-family: 'Acme', sans-serif;
 }
+
+.logohome{
+    width: 120px; /* Establece el ancho deseado */
+    height:60px; /* Establece la altura deseada */ 
+}
+
 
 .mercados{
     background-color: #336A29;
@@ -25,6 +47,7 @@ body{
     border-radius: 25px 0px 0px 25px;
     margin-top: 25px;
     display: flex;
+    
 }
 
 .nombreMercado{
@@ -65,9 +88,3 @@ body{
 .imagenLogo, .infoMercado {
     flex: 1;
 }
-
-.logohome{
-    width: 120px; /* Establece el ancho deseado */
-    height:60px; /* Establece la altura deseada */ 
-}
-
