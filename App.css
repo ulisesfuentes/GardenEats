@@ -95,11 +95,12 @@ body{
 .search-form {
     display: flex;
     align-items: center;
-    border: 1px solid #70757a;
+    border: 1px solid #ffffff;
     border-radius: 24px;
     padding: 5px;
     margin-left: 2px;
     margin-top: 5px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
   }
   
   .search-input {
@@ -115,10 +116,20 @@ body{
     outline: none;
     cursor: pointer;
     padding: 6px;
+        width: 20px;
+        height: 20px; 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        border: none;
+        cursor: pointer;
+        background-image: url("./src/Imagenes/lupa.png");
+        background-color: #ffffff;
+        margin-right: 10px;
   }
   
   .search-button i {
-    color: #70757a;
+    color: #ffffff;
     font-size: 18px;
   }
   
