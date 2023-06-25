@@ -19,6 +19,7 @@ const RestaurantInterface = () =>{
     };
     const editarCierre = (e) => {
         setCierre(e.target.value);
+    
     };
 
     // Funcion para realizar promociones 
