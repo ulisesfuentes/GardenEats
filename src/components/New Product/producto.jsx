@@ -6,5 +6,11 @@ const FormularioNuevoProducto = () =>{
 
     const enviar = (e) =>{
         e.prevenir();
-    }
-}
+        const NewProduct = {
+            nombre: nombre,
+            precio: precio,
+            descripcion: descripcion,
+        };
+        console.log(NewProduct);
+    };
+};
