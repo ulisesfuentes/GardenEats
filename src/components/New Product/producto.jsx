@@ -22,6 +22,10 @@ const FormularioNuevoProducto = () =>{
                 <label htmlFor="nombre">Nombre: </label>
                 <input type="text" id="nombre" value={nombre} onChange={(e)=> setNombre (e.target.value)} />
             </div>
+            <div>
+                <label htmlFor="precio">Precio: </label>
+                <input type="number" id="precio" value={precio} onChange={(e) => setPrecio(e.target.value)} />
+            </div>
         </form>
     );
 };
