@@ -30,6 +30,7 @@ const FormularioNuevoProducto = () =>{
                 <label htmlFor="descripcion">Descripcion: </label>
                 <textarea id="descripcion" value={descripcion} onChange={(e) => setDescripcion (e.target.value)}></textarea>
             </div>
+            <button type="submit">Crear Producto</button>
         </form>
     );
 };
