@@ -12,6 +12,7 @@ const FormularioNuevoProducto = () =>{
             precio: precio,
             descripcion: descripcion,
         };
+         // Imprimir el nuevo producto en la consola
         console.log(NewProduct);
         setNombre("");
         setPrecio("");
