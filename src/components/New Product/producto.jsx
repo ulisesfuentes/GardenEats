@@ -16,4 +16,9 @@ const FormularioNuevoProducto = () =>{
         setPrecio("");
         setDescripcion("");
     };
+    return(
+        <form onSubmit={enviar}>
+            
+        </form>
+    );
 };
