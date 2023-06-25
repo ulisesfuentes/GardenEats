@@ -6,6 +6,7 @@ const FormularioNuevoProducto = () =>{
 
     const enviar = (e) =>{
         e.prevenir();
+        // Aquí puedes realizar la lógica para crear un nuevo producto con los datos ingresados
         const NewProduct = {
             nombre: nombre,
             precio: precio,
