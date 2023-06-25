@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 const FormularioNuevoProducto = () =>{
-    const [nombre, setName] = useState ("");
+    const [nombre, setNombre] = useState ("");
     const [precio, setPrecio] = useState ("");
     const [descripcion, setDescripcion ] = useState ("");
 
@@ -12,5 +12,8 @@ const FormularioNuevoProducto = () =>{
             descripcion: descripcion,
         };
         console.log(NewProduct);
+        setNombre("");
+        setPrecio("");
+        setDescripcion("");
     };
 };
