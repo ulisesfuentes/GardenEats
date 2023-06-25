@@ -18,7 +18,10 @@ const FormularioNuevoProducto = () =>{
     };
     return(
         <form onSubmit={enviar}>
-            
+            <div>
+                <label htmlFor="nombre">Nombre: </label>
+                <input type="text" id="nombre" value={nombre} onChange={(e)=> setNombre (e.target.value)} />
+            </div>
         </form>
     );
 };
