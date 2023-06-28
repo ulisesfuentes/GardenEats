@@ -9,6 +9,7 @@ import Carniceria2 from './src/Imagenes/logo2.jpg'
 import semilleria from './src/Imagenes/logo3.jpg'
 import './App.css';
 import Buscador from './src/components/Buscador/Buscador';
+import Saludo from './src/components/tipoMercado/tipoMercado';
 
 function App() {
   const handleSearch = (query) => {
@@ -52,7 +53,7 @@ function App() {
         modoPago="Online/Efectivo"
       />
 
-<Mercados
+      <Mercados
         img={carniceria}
         nombreMercado="Carniceria - MuMeats"
         horarioMercado="20:50"
@@ -60,7 +61,7 @@ function App() {
         modoPago="Efectivo"
       />
 
-<Mercados
+      <Mercados
         img={Carniceria2}
         nombreMercado="Carniceria-Don Luis"
         horarioMercado="22:00"
@@ -68,13 +69,15 @@ function App() {
         modoPago="Online"
       />
 
-<Mercados
+      <Mercados
         img={verduleria}
         nombreMercado="Verduleria - La verde"
         horarioMercado="21:00"
         entregaMercado="Con delivery"
         modoPago="Online"
       />
+
+      <Saludo />
     </div>
   );
 }

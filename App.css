@@ -50,6 +50,7 @@ body{
     margin-bottom: 5px;
     margin-right: 10px;
     font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .container {
@@ -137,6 +138,16 @@ body{
     font-size: 18px;
   }
 
-  .hola{
-    background-color: #ff0101;
+  .tipoMercado{
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    padding-bottom: 30px;
+    border-radius: 50px;
+    padding-top: 30px;
+    padding-left: 90px;
   }
