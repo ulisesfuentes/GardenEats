@@ -32,7 +32,7 @@ function App() {
 
       <Mercados
         img={verduleria}
-        nombreMercado="La verduleria-Verdura"
+        nombreMercado=" Verduleria-Verdura"
         horarioMercado="22:00"
         entregaMercado="Con delivery"
         modoPago="Online"
@@ -50,6 +50,30 @@ function App() {
         horarioMercado="20:30"
         entregaMercado="Sin delivery"
         modoPago="Online/Efectivo"
+      />
+
+<Mercados
+        img={carniceria}
+        nombreMercado="Carniceria - MuMeats"
+        horarioMercado="20:50"
+        entregaMercado="Sin delivery"
+        modoPago="Efectivo"
+      />
+
+<Mercados
+        img={Carniceria2}
+        nombreMercado="Carniceria-Don Luis"
+        horarioMercado="22:00"
+        entregaMercado="Con delivery"
+        modoPago="Online"
+      />
+
+<Mercados
+        img={verduleria}
+        nombreMercado="Verduleria - La verde"
+        horarioMercado="21:00"
+        entregaMercado="Con delivery"
+        modoPago="Online"
       />
     </div>
   );
