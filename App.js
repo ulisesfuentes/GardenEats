@@ -9,6 +9,7 @@ import Carniceria2 from './src/Imagenes/logo2.jpg'
 import semilleria from './src/Imagenes/logo3.jpg'
 import './App.css';
 import Buscador from './src/components/Buscador/Buscador';
+import SelectorM from './src/components/SelectorM/SelectorM';
 
 
 function App() {
@@ -22,6 +23,12 @@ function App() {
     <div className="App">
       <Header img={logohome} logo={logo} />
       <Buscador onSearch={handleSearch} />
+
+    <div className='divSelector'>
+      <SelectorM/>
+      <SelectorM/>
+      <SelectorM/>
+      </div>
 
       <Mercados
         img={carniceria}
