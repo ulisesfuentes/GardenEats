@@ -10,7 +10,6 @@ import semilleria from './src/Imagenes/logo3.jpg'
 import './App.css';
 import Buscador from './src/components/Buscador/Buscador';
 
-
 function App() {
   const handleSearch = (query) => {
     // Lógica de búsqueda
