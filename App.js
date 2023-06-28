@@ -21,6 +21,7 @@ function App() {
     <div className="App">
       <Header img={logohome} logo={logo} />
       <Buscador onSearch={handleSearch} />
+
       <Mercados
         img={carniceria}
         nombreMercado="Carniceria- Fresh Meat"
@@ -28,6 +29,7 @@ function App() {
         entregaMercado="Con delivery"
         modoPago="Online"
       />
+
       <Mercados
         img={verduleria}
         nombreMercado="La verduleria-Verdura"

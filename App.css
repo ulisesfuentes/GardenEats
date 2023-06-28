@@ -38,7 +38,7 @@ body{
 .mercados{
     background-color: #336A29;
     right: 0; 
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 35px 0px 0px 35px;
     margin-top: 20px;
     margin-left: 78px;
     display: flex;
@@ -76,7 +76,7 @@ body{
     margin-top: 1px;
     margin-bottom: 10px;
     padding-top: 1px;
-    color: #E1E1E1;
+    color: #bdbdbd;
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
 }
@@ -133,4 +133,8 @@ body{
   .search-button i {
     color: #ffffff;
     font-size: 18px;
+  }
+
+  .hola{
+    background-color: #ff0101;
   }
