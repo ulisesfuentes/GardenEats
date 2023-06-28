@@ -9,7 +9,7 @@ import Carniceria2 from './src/Imagenes/logo2.jpg'
 import semilleria from './src/Imagenes/logo3.jpg'
 import './App.css';
 import Buscador from './src/components/Buscador/Buscador';
-import Saludo from './src/components/tipoMercado/tipoMercado';
+
 
 function App() {
   const handleSearch = (query) => {
@@ -77,7 +77,6 @@ function App() {
         modoPago="Online"
       />
 
-      <Saludo />
     </div>
   );
 }
