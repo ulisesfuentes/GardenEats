@@ -8,3 +8,4 @@ const Footer = ({ text }) => {
     </View>
   );
 };
+export default Footer;
