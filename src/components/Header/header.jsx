@@ -30,14 +30,8 @@ const Header = ({ text }) => {
         <div className="menu-icon">
           <span className="fas fa-bars"></span>
         </div>
-        <div className="logo">CodingNepal</div>
-        <ul className="nav-items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Feedback</a></li>
-        </ul>
+        <div className="logo">GardenEats</div>
+        
         <div className="search-icon">
           <span className="fas fa-search"></span>
         </div>
@@ -45,7 +39,7 @@ const Header = ({ text }) => {
           <span className="fas fa-times"></span>
         </div>
         <form action="#">
-          <input type="search" className="search-data" placeholder="Search" required/>
+          <input type="search" className="search-data" placeholder="Buscar" required/>
           <button type="submit" className="fas fa-search"></button>
         </form>
       </nav>
