@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { View, Text } from 'react-native';
 
 const Footer = ({ text }) => {
@@ -8,4 +8,4 @@ const Footer = ({ text }) => {
     </View>
   );
 };
-export default Footer;
+export default Footer;*/

@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 
 const TextField = ({ value, placeholder, onChangeText }) => {
@@ -11,4 +11,4 @@ const TextField = ({ value, placeholder, onChangeText }) => {
       />
     </View>
   );
-};
+};*/

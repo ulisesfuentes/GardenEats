@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
 
 const Button = ({ title, onPress }) => {
@@ -9,4 +9,4 @@ const Button = ({ title, onPress }) => {
   );
 };
 
-export default Button;
+export default Button;*/
