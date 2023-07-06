@@ -2,12 +2,6 @@ import React from 'react';
 import '../styles/styles.css';
 
 const Header = ({ text }) => {
-  const handleMenuClick = () => {
-    items.classList.add("active");
-           menuBtn.classList.add("hide");
-           searchBtn.classList.add("hide");
-           cancelBtn.classList.add("show");
-  };
 
   const handleSearchClick = () => {
     items.classList.remove("active");
@@ -16,12 +10,6 @@ const Header = ({ text }) => {
     cancelBtn.classList.remove("show");
     form.classList.remove("active");
     cancelBtn.style.color = "#ff3d00";
-  };
-
-  const handleCancelClick = () => {
-    form.classList.add("active");
-    searchBtn.classList.add("hide");
-    cancelBtn.classList.add("show");
   };
 
   return (
